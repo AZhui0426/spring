@@ -13,6 +13,6 @@ public class TeacherServiceImpl implements TeacherService {
     private final static Logger log = LoggerFactory.getLogger(TeacherServiceImpl.class);
 
     public TeacherServiceImpl() {
-        log.info("TeacherServiceImpl创建bean对象进入IOC容器");
+        log.info("TeacherServiceImpl创建bean对象进入IOC容器：{}", this);
     }
 }

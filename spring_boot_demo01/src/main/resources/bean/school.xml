@@ -8,4 +8,9 @@
     <import resource="studentService.xml"></import>
     <import resource="teacherService.xml"></import>
 
+    <bean id="schoolService" class="com.azhui.spring_boot_demo01.school.impl.SchoolServiceImpl">
+        <constructor-arg name="studentService" ref="studentService"/>
+        <constructor-arg name="teacherService" ref="teacherService"/>
+    </bean>
+
 </beans>

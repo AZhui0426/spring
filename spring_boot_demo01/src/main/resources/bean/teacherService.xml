@@ -4,7 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="teacherService" class="com.azhui.spring_boot_demo01.school.impl.TeacherServiceImpl">
+    <!-- bean名称为 teacherService teacherService2 -->
+    <bean id="teacherService" class="com.azhui.spring_boot_demo01.school.impl.TeacherServiceImpl" name="teacherService2">
     </bean>
+
+    <!-- teacherService2的bean的别名为：teacherService3 -->
+    <alias name="teacherService2" alias="teacherService3"></alias>
 
 </beans>
